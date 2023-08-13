@@ -39,7 +39,7 @@
                     const sender = accounts[0];
                     
                     // Call your contract's mintTokens function here
-                    const amount = 250000000000000000000000; // Replace with the desired amount to mint
+                    const amount = 250000; // Replace with the desired amount to mint
                     await contract.methods.mintTokens(sender, amount).send({ from: sender });
                     console.log('Tokens minted successfully!');
                 } catch (error) {
